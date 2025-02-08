@@ -7,15 +7,13 @@ process.env.VERCEL_GIT_COMMIT_REF ||
 process.env.HEAD ||
 "main";
 
-const TINA_CLIENT_ID = import.meta.env.TINA_CLIENT_ID || ''
-const TINA_TOKEN = import.meta.env.TINA_TOKEN || ''
-
 export default defineConfig({
   branch,
+
   // Get this from tina.io
-  clientId: TINA_CLIENT_ID,
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
   // Get this from tina.io
-  token: TINA_TOKEN,
+  token: process.env.TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
