@@ -1,6 +1,6 @@
 ---
-title: 'Hello, World!'
-image: /band.jpg
+title: 'Hello, This World!'
+image: ''
 ---
 
 ## Hello World!
